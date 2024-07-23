@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="dropdown.css" >
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Dropdowns</h2>
+
+        <button type="button" > Dropdown button <span onclick="output()" class="material-icons" >arrow_drop_down</span></button>
+
+        <ul id="list">
+
+            <li> <a href="#" >item 1</a></li>
+
+            <li> <a href="#" >item 2</a></li>
+
+            <li> <a href="#" >item 3</a></li>
+
+        </ul>
+
+    </div>
+
+
+    <script>
+
+        function output() {
+            
+            let y = document.getElementById("list").style;
+
+            y.display =  y.display == "block" ? "none" : "block"
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
